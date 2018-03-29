@@ -3,7 +3,9 @@ layout:     post
 title:      "面向对象软件设计模式-组合 Composite"
 subtitle:   ""
 date:       2017-10-01 12:12:00
-categories: 设计模式
+categories: 
+    - 设计模式
+    - Java
 tags:
     - 设计模式
     - Java

@@ -3,7 +3,9 @@ layout:     post
 title:      "面向对象软件设计模式-单例 Singleton"
 subtitle:   ""
 date:       2017-11-29 12:00:00
-categories: 设计模式
+categories: 
+    - 设计模式
+    - Java
 tags:
     - 设计模式
     - Java

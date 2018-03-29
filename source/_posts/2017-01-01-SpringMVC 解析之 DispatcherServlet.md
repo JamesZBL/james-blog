@@ -1,7 +1,10 @@
 ---
 title: SpringMVC 解析之 DispatcherServlet
-categories: [后端]
-tags: [Spring MVC,Spring]
+categories: 
+    - 后端
+tags: 
+    - Spring MVC
+    - Spring
 ---
 
 # Spring MVC 是什么
