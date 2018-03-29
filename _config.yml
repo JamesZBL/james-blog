@@ -82,7 +82,7 @@ theme: next
 deploy:
   type: git
   # repo: https://github.com/JamesZBL/jameszbl.github.io.git
-  repo: https://gitee.com/zbl1996/jamesblog_hexo.git
+  repo: https://gitee.com/zbl1996/jameszbl.github.io.git
   branch: master
 
 # Algolia
