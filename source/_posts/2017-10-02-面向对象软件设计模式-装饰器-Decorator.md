@@ -5,7 +5,6 @@ subtitle:   ""
 date:       2017-10-02 10:12:00
 categories: 
     - 设计模式
-    - Java
 tags:
     - 设计模式
     - Java

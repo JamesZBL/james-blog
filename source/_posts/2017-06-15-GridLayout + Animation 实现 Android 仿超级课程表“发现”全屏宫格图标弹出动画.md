@@ -4,7 +4,6 @@ title:      "GridLayout + Animation 实现 Android 仿超级课程表“发现�
 subtitle:   ""
 date:       2017-06-15 22:41:00
 categories: 
-	- Android
 	- 前端
 tags: 
 	- 交互

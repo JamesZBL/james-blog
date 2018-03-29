@@ -2,7 +2,6 @@
 title: 基于 Spring Boot 的个人博客
 date: 2018-03-29 22:14:57
 categories:
-    - 后端
     - 开源项目
 tags:
     - Spring Boot
