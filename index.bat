@@ -1,0 +1,3 @@
+set HEXO_ALGOLIA_INDEXING_KEY=dd999b30a63c88fb422dc71142c6b7bc
+hexo algolia
+pause
