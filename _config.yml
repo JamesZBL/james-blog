@@ -72,6 +72,8 @@ pagination_dir: page
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
+Plugins:
+  - hexo-generator-baidu-sitemap
 ## Themes: https://hexo.io/themes/
 theme: next
 
@@ -88,3 +90,10 @@ algolia:
   indexName: jamesblog_hexo
   apiKey: dd999b30a63c88fb422dc71142c6b7bc
   chunkSize: 5000
+
+# Baidu Site Map
+baidusitemap:
+  path: baidusitemap.xml
+
+sitemap:
+  path: sitemap.xml
