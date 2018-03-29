@@ -9,7 +9,7 @@ tags: [Spring MVC]
 Spring Web MVC （Spring MVC) 是一套以 Servlet API 为基础平台的优雅的 Web 框架，一直是 Spring Framework 中重要的一个组成部分。 正式名称 “Spring Web MVC” 来自其源模块 spring-webmvc 的名称，但它通常被称为“Spring MVC”。
 
 与 Spring Web MVC 并行，Spring Framework 5.0 引入了一个 Reactive stack —— Web框架，其名称 Spring WebFlux 也基于它的源模块 spring-webflux。
-
+<!-- more -->
 # DispatcherServlet
 
 与许多其他 Web 框架一样，Spring MVC 同样围绕前端页面的控制器模式 (Controller) 进行设计，其中最为核心的 Servlet —— DispatcherServlet 为来自客户端的请求处理提供通用的方法，而实际的工作交由可自定义配置的组件来执行。 这种模型使用方式非常灵活，可以满足多样化的项目需求。
