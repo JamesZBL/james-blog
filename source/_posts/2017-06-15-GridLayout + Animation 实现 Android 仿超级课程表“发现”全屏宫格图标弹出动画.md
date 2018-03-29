@@ -3,10 +3,8 @@ layout:     post
 title:      "GridLayout + Animation 实现 Android 仿超级课程表“发现”全屏宫格图标弹出动画"
 subtitle:   ""
 date:       2017-06-15 22:41:00
-author:     "James"
-header-img: "img/post-bg-android.jpg"
-catalog: true
-tags: [Android]
+categories: Android
+tags: [UI]
 ---
 
 <p><font size="3">关于</font><font size="6">全屏宫格图标</font><font size="3">，超级课程表的“发现”是目前我见过的最好的解决方案，流畅的动画打破了布局单一带来的死板气氛。下面就来介绍这样的动画是如何实现的。

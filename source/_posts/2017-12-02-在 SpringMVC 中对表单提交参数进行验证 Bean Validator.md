@@ -3,9 +3,8 @@ layout:     post
 title:      "在 SpringMVC 中对表单提交参数进行验证（使用 Bean Validator）"
 subtitle:   ""
 date:       2017-12-01 19:25:00
-author:     "James"
-header-img: "img/post-bg-2015.jpg"
-catalog: true
+categories: 
+    - 后端
 tags:
     - Spring MVC
 ---

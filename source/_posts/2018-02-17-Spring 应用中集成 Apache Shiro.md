@@ -3,11 +3,11 @@ layout:     post
 title:      "Spring 应用中集成 Apache Shiro"
 subtitle:   ""
 date:       2018-02-17 09:55:00
-author:     "James"
-header-img: "img/post-bg-2015.jpg"
-catalog: true
+categories: 
+    - 后端
 tags:
     - Shiro
+    - Spring
 ---
 这一篇文章涵盖了将 Shiro 集成到基于 Spring 的应用程序的方法。
 
