@@ -45,7 +45,7 @@ rss:
 footer:
   # Specify the date when the site was setup.
   # If not defined, current year will be used.
-  since: 2018
+  since: 2015
 
   # Icon between year and copyright info.
   icon: user
