@@ -80,10 +80,11 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
-  # repo: https://github.com/JamesZBL/jameszbl.github.io.git
-  repo: https://gitee.com/zbl1996/jameszbl.github.io.git
-  branch: master
+  - type: git
+    # repo: https://github.com/JamesZBL/jameszbl.github.io.git
+    repo: https://gitee.com/zbl1996/jameszbl.github.io.git
+    branch: master
+  - type: baidu_url_submitter ## 百度 URL 提交
 
 # Algolia
 algolia:
@@ -95,11 +96,20 @@ algolia:
 # Baidu push
 baidu_push: true
 
-#百度分享功能
+# 百度分享功能
 baidushare: true
 
+# 百度站点地图
 baidusitemap:
   path: baidusitemap.xml
 
+# google 站点地图
 sitemap:
   path: sitemap.xml
+
+# 百度 URL 自动提交
+baidu_url_submit:
+  count: 1 ## 提交最新的一个链接
+  host: james.letec.top
+  token: AL2qXc8V4KRDxmBu
+  path: baidu_urls.txt ## 文本文档的地址， 新链接会保存在此文本文档里
