@@ -147,11 +147,14 @@ social_icons:
 
 # Blog rolls
 links_icon: link
-links_title: Links
-links_layout: block
-#links_layout: inline
-#links:
-  #Title: http://example.com/
+links_title: 友情链接
+# links_layout: block
+links_layout: inline
+links:
+  EEE凯飞: https://www.jianshu.com/u/77df8abd9a98
+  WinterChen: http://winterchen.com/
+  云邪: http://wuchong.me/
+  州的先生: http://zmister.com/
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
