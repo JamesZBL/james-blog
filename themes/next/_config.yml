@@ -51,7 +51,7 @@ footer:
   icon: user
 
   # If not defined, will be used `author` from Hexo main config.
-  copyright:
+  copyright: 郑保乐 | James Zheng
   # -------------------------------------------------------------
   # Hexo link (Powered by Hexo).
   powered: true
