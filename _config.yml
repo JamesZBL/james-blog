@@ -92,9 +92,11 @@ algolia:
   apiKey: dd999b30a63c88fb422dc71142c6b7bc
   chunkSize: 5000
 
-# Baidu Site Map
-baidusitemap:
-  path: baidusitemap.xml
+# Baidu push
+baidu_push: true
+
+#百度分享功能
+baidushare: true
 
 sitemap:
   path: sitemap.xml
