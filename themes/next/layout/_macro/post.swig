@@ -340,15 +340,18 @@
       </div>
     {% endif %}
 
-    {% if (theme.alipay or theme.wechatpay or theme.bitcoin) and not is_index %}
-      <div>
-        {% include 'reward.swig' %}
-      </div>
-    {% endif %}
+    <!-- s reward 默认位置 -->
 
+    <!-- e resume 默认位置 -->
     {% if theme.post_copyright.enable and not is_index %}
       <div>
         {% include 'post-copyright.swig' with { post: post } %}
+      </div>
+    {% endif %}
+
+    {% if (theme.alipay or theme.wechatpay or theme.bitcoin) and not is_index %}
+      <div>
+        {% include 'reward.swig' %}
       </div>
     {% endif %}
 
