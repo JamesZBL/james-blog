@@ -164,4 +164,29 @@ tags:
 
 # 部署
 
-如果有可用的服务器，可以使用 `hexo g` 命令，生成静态站点，通过 FTP 或其他方式将站点上传到服务器对应目录，并配合 nginx 或 Apache 服务器，即可完成部署，这里介绍一下没有服务器情况下，如何
+如果有可用的服务器，可以使用 `hexo g` 命令，生成静态站点，通过 FTP 或其他方式将站点上传到服务器对应目录，并配合 nginx 或 Apache 服务器，即可完成部署，这里介绍一下没有服务器情况下，如何搭建一个完整的博客站点
+
+首先要有一个 github 账号，如果没有，可到 [github](http://github.com) 用邮箱注册
+
+新建一个仓库，仓库的名字必须符合 `<用户名>.github.io`，用户名指的是浏览 github 个人主页的时候，浏览器地址栏 `github.com/` 后面的那个名字，比如我的 [github 主页](http://github.com/jameszbl)，则我的用户名就是 `jameszbl`，新建仓库后会跳转到初始化页面，显示一个类似于 `https://github.com/jameszbl/jameszbl.github.io.git` 的 url， 记下这个url，稍候会用到
+
+在 “站点配置文件” 中，找到 `deploy`，如果没有可以手动添加，像这样填写：
+```yml
+deploy:
+    - type: git
+      # 远端仓库地址（刚才记下的 url)
+      repo: https://github.com/JamesZBL/jameszbl.github.io.git
+      branch: master
+```
+
+这里的部署配置需要安装一个插件，因此在站点根目录运行命令：
+```shell
+$ npm install hexo-deployer-git --save
+```
+
+插件安装完成后，再执行：
+```shell
+$ hexo g && hexo d
+```
+
+部署插件会自动将编译完成的静态站点推送到 github 的远端仓库，等待几分钟后，访问 `<github 用户名>.github.io`，即可看到搭建好的效果了
