@@ -14,6 +14,13 @@
   <script>
     window._bd_share_config = {
       "common": {
+          // 各平台的 Key
+      "bdSnsKey": {
+          "tsina": "3703099963",
+          "tqq": "tirMNuzo9xpVEWLm",
+          "t163": "211111111111111111111111111",
+          "tsohu": "3333333333333333333333333333333"
+      },
         "bdText": "",
         "bdMini": "2",
         "bdMiniList": false,
