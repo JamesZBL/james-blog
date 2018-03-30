@@ -2,10 +2,11 @@
 title: 我自己
 date: 2018-03-29 22:03:40
 type: "resume"
+comments: false
 ---
 
 > Hey，我是摆码王子
-> 
+>
 > 代码改变世界  
 > 乐于接受和学习新鲜事物
 
