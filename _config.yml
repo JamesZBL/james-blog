@@ -98,5 +98,8 @@ baidu_push: true
 #百度分享功能
 baidushare: true
 
+baidusitemap:
+  path: baidusitemap.xml
+
 sitemap:
   path: sitemap.xml
