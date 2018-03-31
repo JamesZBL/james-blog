@@ -1,5 +1,5 @@
 <!-- JiaThis Button BEGIN -->
-<div class="jiathis_style"><span class="jiathis_txt">分享到：</span>
+<div class="jiathis_style"><span class="jiathis_txt">{{ __('shareto') }}：</span>
 <a class="jiathis_button_qzone"></a>
 <a class="jiathis_button_weixin"></a>
 <a class="jiathis_button_tsina"></a>
