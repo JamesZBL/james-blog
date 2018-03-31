@@ -24,7 +24,8 @@ Hexo 的运行和部署需要以下工具：
 
 ## 安装 Node.js
 Windows 平台使用官网提供的安装包来安装，在 cmd 中验证是否安装好：
-图片
+![](https://upload-images.jianshu.io/upload_images/7134080-c1363a9feb73fda6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 
 ## 安装 Hexo-Cli
 安装 Node 时一般默认安装了 npm 工具，因此使用以下命令来安装 Hexo 的命令行工具 Hexo-Cli:
@@ -71,7 +72,8 @@ timezone: 时区（国内这里填写：Asia/Shanghai）
 ```
 
 Hexo 默认的样式大概是这样的：
-图片
+![](https://upload-images.jianshu.io/upload_images/7134080-df16f35a46e2c669.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 
 推荐使用 Next 主题
 
@@ -104,14 +106,15 @@ $ hexo s
     INFO  Hexo is running at http://0.0.0.0:4000/. Press Ctrl+C to stop.
 
 的时候，就可以打开浏览器访问：`http://localhost:4000` 来查看效果了，默认效果是这样的：
-图片
+![](https://upload-images.jianshu.io/upload_images/7134080-c039d4e9117a5f31.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 
 如果觉得不好看可以通过修改`themes/next`目录下 “主题配置文件” `_config.yml`来自定义主题样式，这里只介绍一些常用配置，详细配置请参考 [Next 官网](http://theme-next.iissnan.com/getting-started.html)
 
 ### 布局
 
 Next 的默认布局为 Muse，就是这个样子：
-图片
+![](https://upload-images.jianshu.io/upload_images/7134080-c039d4e9117a5f31.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 Next 还提供另外两种布局：
 - Pisces
@@ -123,7 +126,8 @@ Next 还提供另外两种布局：
 scheme: Pisces
 ```
 Pisces 布局的效果：
-图片
+![](https://upload-images.jianshu.io/upload_images/7134080-a3bf55f9e72586af.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 
 # 写文章
 
@@ -158,7 +162,8 @@ tags:
 ```
 
 站点首页会以分页的方式展示最近发布的文章，默认展示全文，如果想要只展示开头部分内容，比如这种效果：
-图片
+![](https://upload-images.jianshu.io/upload_images/7134080-e5fa264b0b204944.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 
 可以在文章适当的位置添加 `<!-- more -->` 标记，这样可以在首页只展示标记之前的内容，避免首页一次加载过多内容造成不好的体验
 
