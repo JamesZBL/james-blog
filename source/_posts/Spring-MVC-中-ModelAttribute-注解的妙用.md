@@ -37,7 +37,7 @@ public String processSubmit(@ModelAttribute Department department) { }
 - 该模型类的默认构造方法
 - 调用具有与 Servlet 请求参数匹配的参数的 “主构造函数”; 参数名称通过 JavaBeans `@ConstructorProperties` 或通过字节码中的运行时保留参数名称确定。
 
-虽然一般都是使用模型方法 Model method 来使用属性填充模型，但另一种方法是依靠 `Converter<String，T>` 识别 URI 路径变量来绑定。在下面的例子中，模型属性名称 “user” 与 URI 路径变量 “user” 匹配，并且通过将 String 类型的用户名交给给已注册的 `Converter<String，User>` 这个转换器来生成创建模型：
+虽然一般都是使用模型方法 Model method 来使用属性填充模型，但另一种方法是依靠 `Converter<String,T>` 识别 URI 路径变量来绑定。在下面的例子中，模型属性名称 “user” 与 URI 路径变量 “user” 匹配，并且通过将 String 类型的用户名交给给已注册的 `Converter<String,User>` 这个转换器来生成创建模型：
 
 ```java
 @PutMapping("/users/{user}")
@@ -45,3 +45,6 @@ public String saveUser(@ModelAttribute("user") User user) {
     // ...
 }
 ```
+在获得模型属性实例之后，请求数据就会被绑定到模型属性上。 `WebDataBinder` 负责将 Servlet 请求参数名称（查询参数或表单字段）和目标模型对象上的字段名称进行匹配。 必要时会将属性的类型进行转换后再填充对应字段。
+
+数据绑定不能保证不会出错，发生错误时默认情况下会抛出 `BindException` 异常，但要在处理器方法中识别出这些错误，需要在 @ModelAttribute 后面添加一个 `BindingResult` 类型的参数，需要注意的是：这个参数必须和模型属性参数 (`@ModelAtrribute` 参数) 如下所示：
