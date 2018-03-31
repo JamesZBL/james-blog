@@ -10,6 +10,8 @@ tags:
     - Hexo
 ---
 
+![](https://upload-images.jianshu.io/upload_images/7134080-c5e3beb8f919e30c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 Hexo 是一个快速、简洁且高效的静态博客应用，它的一大亮点是提供了强大的 CLI 工具，真正实现了一键部署。Hexo 使用 Markdown 来解析文章，可以在很短时间内渲染出简洁大方的页面。本文将从安装到部署来详细介绍 Hexo。
 <!-- more -->
 本文涉及到的一些工具需要一定操作基础，若有疑问，请先自行搜索学习。
@@ -133,9 +135,9 @@ Pisces 布局的效果：
 
 在站点根目录运行命令：
 ```shell
-hexo new <title>
+hexo new [title]
 ```
-其中，\<title\> 为文章题目，运行命令后在 `source/_posts` 目录下可以看到 `文章题目.md` 这样一个文件，用任意编辑器打开这个文件，里面的内容大概是这样：
+其中，[title] 为文章题目，运行命令后在 `source/_posts` 目录下可以看到 `文章题目.md` 这样一个文件，用任意编辑器打开这个文件，里面的内容大概是这样：
 
 ```yml
 ---
