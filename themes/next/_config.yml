@@ -400,7 +400,7 @@ valine:
 
 # Support for LiveRe comments system.
 # You can get your uid from https://livere.com/insight/myCode (General web site)
-livere_uid: MTAyMC8zNTMyOC8xMTg2NA==
+# livere_uid: MTAyMC8zNTMyOC8xMTg2NA==
 
 # Gitment
 # Introduction: https://imsun.net/posts/gitment-introduction/
@@ -430,8 +430,8 @@ baidushare:
 # This plugin is more useful in China, make sure you known how to use it.
 # And you can find the use guide at official webiste: http://www.jiathis.com/.
 # Warning: JiaThis does not support https.
-#jiathis:
-  ##uid: Get this uid from http://www.jiathis.com/
+jiathis: true
+  uid: 2160247
 #add_this_id:
 
 # Share
