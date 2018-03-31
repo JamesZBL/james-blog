@@ -35,7 +35,7 @@ favicon:
   #ms_browserconfig: /images/browserconfig.xml
 
 # Set default keywords (Use a comma to separate)
-keywords: "Hexo, NexT"
+keywords: "Java,后端,博客,Spring Boot,Spring,设计模式,大数据,Spark,Hadoop,程序员,软件开发"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -247,9 +247,9 @@ post_wordcount:
   #description: ex. subscribe to my blog by scanning my public wechat account
 
 # Reward
-reward_comment: 坚持原创技术分享，您的支持将鼓励我继续创作！
-wechatpay: /images/wechatpay.jpg
-alipay: /images/alipay.jpg
+# reward_comment: 坚持原创技术分享，您的支持将鼓励我继续创作！
+# wechatpay: /images/wechatpay.jpg
+# alipay: /images/alipay.jpg
 #bitcoin: /images/bitcoin.png
 
 # Declare license on posts
@@ -374,9 +374,9 @@ disqus:
 
 # changyan
 changyan:
-  enable: false
-  appid:
-  appkey:
+  enable: true
+  appid: cytxDP7hE
+  appkey: e4d56467e3e0e8e707d560e87196ea24
 
 
 # Valine.

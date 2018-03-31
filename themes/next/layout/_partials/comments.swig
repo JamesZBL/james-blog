@@ -49,6 +49,7 @@
 
   {% elseif theme.changyan.appid and theme.changyan.appkey %}
     <div class="comments" id="comments">
+        <div id="cyReward" role="cylabs" data-use="reward" style="padding: 10px 0; margin: 0px auto; width: 90%; text-align: center;"></div>
       <div id="SOHUCS"></div>
     </div>
 
