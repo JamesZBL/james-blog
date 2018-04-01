@@ -45,9 +45,3 @@
   #}{{ theme.footer.custom_text }}{#
 #}</div>
 {% endif %}
-
-{% if config.icp_id %}
-<div>
-    <a href="http://www.miitbeian.gov.cn/">{{config.icp_id}}</a>
-</div>
-{% endif %}
