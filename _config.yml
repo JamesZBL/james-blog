@@ -6,7 +6,7 @@
 title: 郑保乐的博客
 subtitle: James' Blog
 description: 分享最新技术文章、开源项目、编程思想以及职业生涯规划。这里优秀的判断力来自经验，但经验来自错误的判断
-keywords: Java,后端,博客,Spring Boot,Spring,设计模式,大数据,Spark,Hadoop,程序员,软件开发
+keywords: Java,后端,博客,Spring Boot,Spring,MyBatis,设计模式,大数据,Spark,Hadoop,程序员,软件开发,数据分析,分布式计算
 author: 郑保乐
 language: zh-Hans
 timezone: Asia/Shanghai
@@ -115,3 +115,7 @@ baidu_url_submit:
   host: james.letec.top
   token: AL2qXc8V4KRDxmBu
   path: baidu_urls.txt ## 文本文档的地址， 新链接会保存在此文本文档里
+
+
+# ICP 备案号
+icp_id: 冀ICP备18000182号

@@ -46,6 +46,8 @@
 #}</div>
 {% endif %}
 
+{% if config.icp_id %}
 <div>
-<a href="http://www.miitbeian.gov.cn/">冀 ICP 备 18000182 号</a>
+    <a href="http://www.miitbeian.gov.cn/">{{config.icp_id}}</a>
 </div>
+{% endif %}
