@@ -1,11 +1,15 @@
 ---
-title: Ubuntu Linux 中虚拟主机的配置 - 搭配Nginx
+title: Ubuntu Linux 中虚拟主机的配置 - 搭配 Nginx
 date: 2018-04-14 20:30:53
+categories:
+    - 运维
 tags:
     - Linux
     - Nginx
     - 虚拟主机
     - 域名
+    - 运维
+    - 架构
 ---
 
 虚拟主机，正如其名，就是将一台服务器划分为多个虚拟的主机，可以将每个域名分配给不同的虚拟主机，这样可以充分利用了域名资源和硬件资源。这次我们采用 Nginx 实现虚拟主机的配置。
