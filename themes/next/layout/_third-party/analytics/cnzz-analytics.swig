@@ -14,7 +14,7 @@
     <span class="post-meta-divider"></span>
     <div style="display:inline-block;">
         <img src="/images/beian.png" style="display: inline-block;vertical-align:middle;margin:0px,5px,5px,0px;"/>
-        <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=13010802000830">冀公网安备 13010802000830号</a>
+        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=13010802000830">冀公网安备 13010802000830号</a>
     </div>
   </div>
 
