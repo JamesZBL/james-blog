@@ -9,7 +9,7 @@ tags:
     - Spring MVC
 ---
 
-图片
+![](https://upload-images.jianshu.io/upload_images/7134080-edebba8af60420c9.gif?imageMogr2/auto-orient/strip)
 
 REST 全称是 Representational State Transfer，中文意思是“表述性状态转移”。RESTful 是关于 Web 的现有特征和使用方式的一些准则和约束。 基于 Spring MVC 的 RestController，我们可以方便的构建一个 RESTful 风格的应用。
 
