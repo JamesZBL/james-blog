@@ -19,7 +19,7 @@ REST 全称是 Representational State Transfer，中文意思是“表述性状�
 
 
 
-我们可以直接使用 IntelliJ IDEA （推荐）中的 Spring initializer 快速创建一个基于 Spring Boot 的项目，这里使用 Maven 构建， `pom.xml` 文件如下：
+我们可以直接使用 **IntelliJ IDEA** （推荐）中的 **Spring initializer** 快速创建一个基于 **Spring Boot** 的项目，这里使用 **Maven** 构建， `pom.xml` 文件如下：
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -84,11 +84,11 @@ REST 全称是 Representational State Transfer，中文意思是“表述性状�
 ```
 
 `Spring Maven plugin` 是 Spring 针对 Maven 开发的一套插件，包含了几个强大的功能：
-- 无需过多复杂的配置即可快速构建一个可执行的 jar 包，使应用的运行可以几乎不受环境的影响
-- 自动搜索 `public static void main()` 方法，并将其所在的类标志为启动类
-- 对 Spring Boot 的依赖进行自动画管理，所有的依赖项目版本都和 Spring Boot 父项目保持一致（默认情况下），当然也可以手动指定其他版本
+- 无需过多复杂的配置即可**快速构建**一个可执行的 jar 包，使应用的运行可以几乎不受环境的影响
+- 自动搜索 `public static void main()` 方法，并将其所在的类标志为**启动类**
+- 对 Spring Boot 的依赖进行自动化管理，所有的依赖项目版本都和 Spring Boot 父项目保持一致（默认情况下），当然也可以手动指定其他版本
 
-Spring 同样支持 Gradle 构建，详细配置请参考 [Build with Gradle][7dc5ba20]
+Spring 同样支持 `Gradle` 构建，详细配置请参考 [Build with Gradle][7dc5ba20]
 
 
 
@@ -96,7 +96,7 @@ Spring 同样支持 Gradle 构建，详细配置请参考 [Build with Gradle][7d
 
 
 
-这里的实体类并非 ORM 中的实体类，而是 REST 中的 “资源” ，我们的 web service 要实现的功能是处理 URL 为 `/userinfo/1` 的 `GET` 请求，并将结果以 JSON 作为响应体返回，响应状态码为 `200 OK`，JSON 的格式如下：
+这里的实体类并非 **ORM** 中的实体类，而是 REST 中的 “资源” ，我们的 web service 要实现的功能是处理 URL 为 `/userinfo/1` 的 `GET` 请求，并将结果以 **JSON** 作为响应体返回，响应状态码为 `200 OK`，JSON 的格式如下：
 
 ```javascript
 {
@@ -154,11 +154,11 @@ public class GreetingController {
 
 
 
-# 构建可执行的 jar
+# 让应用跑起来
 
 
 
-传统的构建方式是生成一个 war 文件然后部署到 web 服务器上，这样有时会觉得不太方便，因此推荐使用 Spring Boot 的 Maven 插件快速生成一个独立的可执行的 jar 文件，使用 `java -jar` 命令即可启动这个应用，所有的类和资源等文件都被集成到这一个 jar 文件中，里面也包括了嵌入式的 servlet 容器（比如 Tomcat），下面是这个应用的启动类：
+传统的构建方式是生成一个 war 文件然后部署到 web 服务器上，这样有时会觉得不太方便，因此推荐使用 Spring Boot 的 Maven 插件快速生成一个独立的可执行的 jar 文件，使用 `java -jar` 命令即可启动这个应用，所有的类和资源等文件都被集成到这一个 jar 文件中，里面也包括了**嵌入式**的 servlet 容器（比如 Tomcat），下面是这个应用的启动类：
 
 ```java
 @SpringBootApplication
@@ -170,4 +170,49 @@ public class Application {
 }
 ```
 
+`@SpringBootApplication` 这个注解是一个组合注解，它包括：
+- `@Configuration`：声明这个类是上下文中的 bean 的配置类
+- `@EnableAutoConfiguration`：使 Spring 将上下文中扫描到的相关 bean 配置类或 properties 类，并将这些 bean 放到应用上下文中
+- Spring 当检测到 classpath 下有 spring-webmvc 的依赖后，会自动给应用启动类上添加 `@EnableWebMvc` 的注解，它表示这个应用是一个 web 应用，应用启动时就会执行和 web 相关的操作，比如实例化 `DispatcherServlet` 类并进行相关的配置
+- `@ComponentScan`：使 Spring 扫描所有自定义**组件类、配置类、业务类以及控制器**，并将其装配
+
+在启动类中的 `main` 方法中调用 `SpringBootApplication.run()` 即可实现应用的启动，和传统 Java web 应用配置复杂的 **web.xml** 文件截然不同，不需要在配置上花费太多时间
+
+
+## 构建可执行的 jar
+
+我们可以使用一条简单的命令来完成应用打包成 jar：
+
+```shell
+$ ./mvnw clean package
+```
+
+执行这条命令来启动应用：
+
+```shell
+
+$ java -jar target/gs-rest-service-0.1.0.jar
+```
+
+## 做一些简单的测试
+
+在浏览器中访问 `htpp://localhost:8080/user/1`，没问题的话会得到如下响应：
+
+```javascript
+{
+    "id": 1,
+    "name": "张三"
+}
+```
+
+
+# 总结
+
+
+这仅仅是一个 RESTful web service，更多文档请浏览：[Building a RESTful Web Service][5e1fef67]
+
+
+
+
+  [5e1fef67]: https://spring.io/guides/gs/rest-service/ "Building a RESTful Web Service"
   [7dc5ba20]: https://spring.io/guides/gs/rest-service/ "Build with Gradle"
