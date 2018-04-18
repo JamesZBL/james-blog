@@ -112,7 +112,7 @@ sitemap:
 
 # 百度 URL 自动提交
 baidu_url_submit:
-  count: 1 ## 提交最新的一个链接
+  count: 100 ## 提交最新的一个链接
   host: james.letec.top
   token: AL2qXc8V4KRDxmBu
   path: baidu_urls.txt ## 文本文档的地址， 新链接会保存在此文本文档里
